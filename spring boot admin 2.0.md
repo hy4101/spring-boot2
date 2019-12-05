@@ -49,6 +49,8 @@
     server:
       port: 10002
       
-5、ok
+5、ok，浏览器输入 http://localhost:10001/ （注：端口是spring-boot2-admin-server服务的端口）
 
-![avatar](images/localhost_10001_.png)
+预览图：
+
+![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_.png)
