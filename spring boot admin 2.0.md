@@ -36,7 +36,10 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
             <version>2.1.6</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 4、新增 application.yml 配置文件
 
     spring:
@@ -48,11 +51,19 @@
             url: http://localhost:10001
     server:
       port: 10002
-      
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: '*'
+
+注：添加spring-boot-starter-actuator依赖和management配置可以看到完整信息
+
 5、ok，浏览器输入 http://localhost:10001/ （注：端口是spring-boot2-admin-server服务的端口）
 
 预览图：
 
 ![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_.png)
-![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_ (1).png)
-![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_ (2).png)
+![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_(1).png)
+![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_(2).png)
+
