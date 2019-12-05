@@ -54,3 +54,5 @@
 预览图：
 
 ![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_.png)
+![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_ (1).png)
+![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/localhost_10001_ (2).png)
