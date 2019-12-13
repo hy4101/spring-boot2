@@ -5,6 +5,10 @@ spring:
     admin:
       client:
         url: http://localhost:10001
+  security:
+    user:
+      password: admin
+      name: admin
 server:
   port: 10002
 management:

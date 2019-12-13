@@ -1,14 +1,20 @@
 spring:
+  security:
+    user:
+      password: admin
+      name: admin
   application:
     name: admin-server
   mail:
-    host: smtp.qq.com
-    username: 857454370@qq.com
-    password: pmktcuqpjcwxbddd
+    host: smtp.163.com
+    username: 18059223611@163.com
+    #    password: pmktcuqpjcwxbddd
+    password: hy4101
     properties:
       mail:
-        debug: false
+        #        debug: false
         smtp:
+          #          port: 465
           auth: true
           starttls:
             enable: true
@@ -17,7 +23,11 @@ spring:
     admin:
       notify:
         mail:
-          to: 857454370@qq.com
-          from: 842230914@qq.com
+          to: 842230914@qq.com
+          from: 18059223611@163.com
+          enabled: true
 server:
   port: 10001
+management:
+  security:
+    enabled: false
