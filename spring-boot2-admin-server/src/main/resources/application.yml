@@ -1,33 +1,10 @@
 spring:
+  #  配置 admin ui 的登入用户名和密码
   security:
     user:
       password: admin
       name: admin
   application:
     name: admin-server
-  mail:
-    host: smtp.163.com
-    username: 18059223611@163.com
-    #    password: pmktcuqpjcwxbddd
-    password: hy4101
-    properties:
-      mail:
-        #        debug: false
-        smtp:
-          #          port: 465
-          auth: true
-          starttls:
-            enable: true
-            required: true
-  boot:
-    admin:
-      notify:
-        mail:
-          to: 842230914@qq.com
-          from: 18059223611@163.com
-          enabled: true
 server:
   port: 10001
-management:
-  security:
-    enabled: false

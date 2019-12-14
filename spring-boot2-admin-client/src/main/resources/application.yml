@@ -4,18 +4,21 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:10001
-        username: admin
-        password: admin
+        url: http://localhost:10001  #admin 服务的地址
+        username: admin # 登入的账户，和admin-server配置的用户名对应
+        password: admin #登入密码，和admin-server配置的密码对应
+        # 以下配置是注册的实例，service-base-url 和 name 2选一 ，
+        # 注意：是本服务的地址或服务名称，不是admin-server
         instance:
-          service-base-url: http://127.0.0.1:10001
+          service-base-url: http://127.0.0.1:10002
+          name: admin-client
 server:
   port: 10002
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: '*' #显示所有信息
 info:
   version: 1.1.0
   groupId: 1.2.3
