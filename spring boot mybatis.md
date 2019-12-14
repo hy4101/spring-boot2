@@ -9,18 +9,18 @@ spring-boot2-mybaits
 
 1. 创建 spring-boot2-mybaits
 
-    在pom.xml中添加依赖
+在pom.xml中添加依赖
 
-       <dependency>
-           <groupId>org.mybatis.spring.boot</groupId>
-           <artifactId>mybatis-spring-boot-starter</artifactId>
-           <version>2.1.0</version>
-       </dependency>
-       <dependency>
-           <groupId>mysql</groupId>
-           <artifactId>mysql-connector-java</artifactId>
-           <scope>runtime</scope>
-       </dependency>
+    <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <version>2.1.0</version>
+    </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <scope>runtime</scope>
+    </dependency>
         
 2、新增 application.yml 配置文件，配置数据源
 
@@ -57,6 +57,6 @@ spring-boot2-mybaits
 
 到此spring-boot2-mybaits服务模块就结束了
 
-2、ok，浏览器输入 http://localhost:10001/ （注：端口是spring-boot2-admin-server服务的端口）
+2、ok，浏览器输入 http://localhost:10003/user/test进行数据测试
 
-GIT地址：
+GIT地址：https://github.com/hy4101/spring-boot2.git
