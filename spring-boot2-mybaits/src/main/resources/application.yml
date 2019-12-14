@@ -1,0 +1,29 @@
+server:
+  port: 10003
+
+spring:
+  application:
+    name: spring-boot-mybatis
+  boot:
+    admin:
+      client:
+        url: http://localhost:10001
+        username: admin
+        password: admin
+        instance:
+          name: spring-boot-mybatis
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/tttt?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # spring boot admin 中显示完整信息
+
+info:
+  version: V1.1.0
+mybatis:
+  mapper-locations: classpath:/mybaits/mapper/*.xml
