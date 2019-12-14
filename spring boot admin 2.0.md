@@ -2,6 +2,10 @@
 
 以下服务已经在父工程中引入了spring-boot和spring-boot-starter-web
 
+spring  boot admin 2.2.*版本发布，更友好的支持中文，
+
+支持语言：中文、法文、韩文、日文、英文等 5国语言
+
 案例模块
 1、spring-boot2-admin-server admin服务模块
 
@@ -93,5 +97,3 @@
 ![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/admin1.png)
 ![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/admin2.png)
 ![avatar](https://github.com/hy4101/spring-boot2/blob/master/images/admin3.png)
-
-6、
