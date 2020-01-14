@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-boot2-admin-server</module>
-        <module>spring-boot2-admin-client</module>
-        <module>spring-boot2-mybaits</module>
+        <module>sb2-admin-server</module>
+        <module>sb2-admin-client</module>
+        <module>sb2-mybatis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
