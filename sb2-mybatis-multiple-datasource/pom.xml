@@ -9,13 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sb2-admin-client</artifactId>
+    <artifactId>sb2-mybatis-multiple-datasource</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>spring.boot2</groupId>
             <artifactId>sb2-tool-spring-boot-admin</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 </project>

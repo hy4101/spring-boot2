@@ -12,6 +12,8 @@
         <module>sb2-admin-server</module>
         <module>sb2-admin-client</module>
         <module>sb2-mybatis</module>
+        <module>sb2-mybatis-multiple-datasource</module>
+        <module>sb2-common-boot-admin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

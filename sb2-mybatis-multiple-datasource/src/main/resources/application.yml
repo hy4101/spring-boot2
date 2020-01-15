@@ -1,0 +1,34 @@
+server:
+  port: 10004
+
+spring:
+  application:
+    name: sb2-mybatis-multiple-datasource
+  datasource:
+    ds1: #数据源1
+      driver-class-name: com.mysql.jdbc.Driver # mysql的驱动你可以配置别的关系型数据库
+      url: jdbc:mysql://127.0.0.1:3306/tttt?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+      username: root # 用户名
+      password: 123456 # 密码
+    ds2: # 数据源2
+      driver-class-name: com.mysql.jdbc.Driver # mysql的驱动你可以配置别的关系型数据库
+      url: jdbc:mysql://127.0.0.1:3306/tttt2?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+      username: root # 用户名
+      password: 123456 # 密码
+  boot:
+    admin:
+      client:
+        url: http://localhost:10001
+        username: admin
+        password: admin
+        instance:
+          name: sb2-mybatis-multiple-datasource
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # spring boot admin 中显示完整信息
+
+info:
+  version: V1.1.0
